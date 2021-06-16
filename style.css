@@ -1,6 +1,12 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 header {
     padding: 10px;
-    margin-top: -50px;
+    margin: 0 auto;
+    margin-top: -10px;
 }
 
 a:link {
@@ -21,11 +27,16 @@ a:hover {
 #top-nav{
     margin: 0px 0px 26% 0px;
     padding: 0px;
+    /* Postioning */
+    /* position: absolute;
+    top: 0%; */
 }
 
 ul#horizontal-list li {
     display: inline;
+    list-style-type: none;
     padding: 10px;
+    margin: 0;
 }
 
 #left_header {
@@ -39,23 +50,48 @@ ul#horizontal-list li {
     margin: 0px auto;
 }
 
+#center_c {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 3px solid blue;
+}
+
+#glogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
-    text-align: center;
-    /*border: 3px solid green;*/
+    
+    overscroll-behavior: none;
+    height: 100%;
+    /*text-align: center;
     padding: 10px;
     margin-top: 30px;
+    width: 95%; */
 }
 
 footer {
-    margin: 0px auto;
-    margin-top: 31em;
-    border: 3px solid green;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    background: rgb(238, 235, 235);
+    /*border: 3px solid green;*/
 }
 
 #left_footer{
     float: left;
     margin: 0px auto;
-    margin-left: -50px;
+    margin-left: 0px;
     border: 2px solid blue;
     width: 300px;
 }
